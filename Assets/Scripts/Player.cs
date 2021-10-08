@@ -60,4 +60,17 @@ public class Player : MonoBehaviour
             moveVector.y = 0;
         return moveVector;
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        Enemy enemy = other.GetComponentInParent<Enemy>();
+        if (enemy)
+        {
+            enemy.OnCrash(this);
+        }
+    }
+
+    public void OnCrash(Enemy enemy)
+    {
+        Debug.Log("Oncrash enemy = " + enemy);
+    }
 }

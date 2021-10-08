@@ -59,6 +59,8 @@
     <Compile Include="Assets\StarSparrow\Readme\Readme Files\Scripts\ReadmeStarSparrow.cs" />
     <Compile Include="Assets\Scripts\InputController.cs" />
     <Compile Include="Assets\Scripts\SystemManager.cs" />
+    <Compile Include="Assets\Scripts\EnemyFactory.cs" />
+    <Compile Include="Assets\Scripts\EnemyManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\StarSparrow\UpgradeHDRP\UpgradeHDRP.txt" />
